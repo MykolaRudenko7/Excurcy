@@ -1,195 +1,128 @@
-/*
-(i) Код попадает в итоговый файл,
-только когда вызвана функция,
-например flsFunctions.spollers();
-Или когда импортирован весь файл,
-например import "files/script.js";
-Неиспользуемый (не вызванный)
-код в итоговый файл не попадает.
-
-Если мы хотим добавить модуль
-следует его расскоментировать
-*/
-
-// Включить/выключить FLS (Full Logging System) (в работе)
-window['FLS'] = true;
-
-// Подключение основного файла стилей
-import "../scss/style.scss";
-
-// ========================================================================================================================================================================================================================================================
-// Функционал ========================================================================================================================================================================================================================================================
-// ========================================================================================================================================================================================================================================================
-import * as flsFunctions from "./files/functions.js";
-
-/* Проверка поддержки webp, добавление класса webp или no-webp для HTML */
-/* (i) необходимо для корректного отображения webp из css  */
-flsFunctions.isWebp();
-/* Добавление класса touch для HTML если браузер мобильный */
-// flsFunctions.addTouchClass();
-/* Добавление loaded для HTML после полной загрузки страницы */
-// flsFunctions.addLoadedClass();
-/* Модуль для работы с меню (Бургер) */
-// flsFunctions.menuInit();
-/* Учет плавающей панели на мобильных устройствах при 100vh */
-// flsFunctions.fullVHfix();
-
-/*
-Модуль работы со спойлерами
-Документация: https://template.fls.guru/template-docs/modul-spojlery.html
-Сниппет (HTML): spollers
-*/
-// flsFunctions.spollers();
-
-/*
-Модуль работы с табами
-Документация: https://template.fls.guru/template-docs/modul-taby.html
-Сниппет (HTML): tabs
-*/
-// flsFunctions.tabs();
-
-/*
-Модуль "показать еще"
-Документация: https://template.fls.guru/template-docs/modul-pokazat-eshhjo.html
-Сниппет (HTML): showmore
-*/
-// flsFunctions.showMore();
-
-/*
-Попапы
-Документация: https://template.fls.guru/template-docs/funkcional-popup.html
-Сниппет (HTML): pl
-*/
-// import './libs/popup.js'
-
-/*
-Модуль параллакса мышью
-Документация: 
-Сниппет (HTML): 
-*/
-// import './libs/parallax-mouse.js'
-
-// ========================================================================================================================================================================================================================================================
-// Работа с формами ========================================================================================================================================================================================================================================================
-// ========================================================================================================================================================================================================================================================
-import * as flsForms from "./files/forms/forms.js";
-
-/* Работа с полями формы */
-/* Документация: https://template.fls.guru/template-docs/rabota-s-formami.html */
-// flsForms.formFieldsInit({ viewPass: false });
-
-/* Oтправка формы */
-/* Документация: https://template.fls.guru/template-docs/rabota-s-formami.html */
-// flsForms.formSubmit();
-
-/* Модуль формы "колличество" */
-// flsForms.formQuantity();
-
-/* Модуль звездного рейтинга */
-// flsForms.formRating();
-
-/* Модуль работы с select. */
-// import './libs/select.js'
-
-/* (В работе) Модуль работы с масками.*/
-/*
-Подключение и настройка выполняется в файле js/files/forms/inputmask.js
-Документация по работе в шаблоне:
-Документация плагина: https://github.com/RobinHerbots/inputmask
-Сниппет(HTML):
-*/
-// import "./files/forms/inputmask.js";
-
-/* Модуль работы с ползунком */
-/*
-Подключение и настройка выполняется в файле js/files/forms/range.js
-Документация по работе в шаблоне:
-Документация плагина: https://refreshless.com/nouislider/
-Сниппет (HTML): range
-*/
-// import "./files/forms/range.js";
-
-/* Модуль работы с подсказками (tippy) */
-/*
-Подключение плагина Tippy.js и настройка выполняется в файле js/files/tippy.js
-Документация по работе в шаблоне:
-Документация плагина: https://atomiks.github.io/tippyjs/
-Сниппет (HTML): tip (добавляет атрибут с подсказкой для html тега)
-*/
-// import "./files/tippy.js";
-
-// ========================================================================================================================================================================================================================================================
-// Работа со слайдером (Swiper) ========================================================================================================================================================================================================================================================
-// ========================================================================================================================================================================================================================================================
-/*
-Настройка подключения плагина слайдера Swiper и новых слайдеров выполняется в файле js/files/sliders.js
-Документация по работе в шаблоне: https://template.fls.guru/template-docs/rabota-so-slajderom-swiper.html
-Документация плагина: https://swiperjs.com/
-Сниппет(HTML): swiper
-*/
-// import "./files/sliders.js";
-
-// ========================================================================================================================================================================================================================================================
-// Модули работы с прокруткой страницы ========================================================================================================================================================================================================================================================
-// ========================================================================================================================================================================================================================================================
-
-/*
-Изменение дизайна скроллбара
-Документация по работе в шаблоне: В HTML добавляем к блоку атрибут data-simplebar
-Документация плагина: https://github.com/Grsmto/simplebar/tree/master/packages/simplebar
-Сниппет(HTML): 
-*/
-// import './files/scroll/simplebar.js';
-
-// Ленивая (отложенная) загрузка картинок
-// Документация по работе в шаблоне: https://template.fls.guru/template-docs/modul-lenivaya-podgruzka-lazy-loading.html
-// Документация плагина: https://github.com/verlok/vanilla-lazyload
-// Сниппет(HTML):
-// import './files/scroll/lazyload.js';
-
-// Наблюдатель за объектами c атрибутом data-watch
-// Документация: https://template.fls.guru/template-docs/modul-nabljudatel-za-poyavleniem-elementa-pri-skrolle.html
-// Сниппет(HTML):
-// import './libs/watcher.js'
-
-// Функции работы скроллом
-import * as flsScroll from "./files/scroll/scroll.js";
-
-// Плавная навигация по странице
-// Документация: https://template.fls.guru/template-docs/modul-plavnoj-navigacii-po-stranice.html
-// flsScroll.pageNavigation();
-
-// Функционал добавления классов к хедеру при прокрутке
-// Документация: https://template.fls.guru/template-docs/modul-dobavleniya-klassov-k-shapke-pri-prokrutke-stranicy.html
-// flsScroll.headerScroll();
-
-// Функционал липкого блока
-// flsScroll.stickyBlock();
-
-// ========================================================================================================================================================================================================================================================
-// Галерея ========================================================================================================================================================================================================================================================
-// ========================================================================================================================================================================================================================================================
-/*
-Документация по работе в шаблоне: 
-Документация плагина: https://www.lightgalleryjs.com/docs/
-Сниппет(HTML):
-*/
-// import "./files/gallery.js";
-
-// ========================================================================================================================================================================================================================================================
-// Прочие плагины ============================================================================================================================================================================================================================================================================================================
-// ========================================================================================================================================================================================================================================================
-
-/* Динамический адаптив */
-// Документация: https://template.fls.guru/template-docs/dinamicheskij-adaptiv.html
-import "./libs/dynamic_adapt.js";
-
-/* Форматирование чисел */
-// import './libs/wNumb.min.js';
-
-// ========================================================================================================================================================================================================================================================
-// Прочее ========================================================================================================================================================================================================================================================
-// ========================================================================================================================================================================================================================================================
-/* Подключаем файлы со своим кодом */
-import "./files/script.js";
-//============================================================================================================================================================================================================================================
+(() => {
+    "use strict";
+    function isWebp() {
+        function testWebP(callback) {
+            let webP = new Image;
+            webP.onload = webP.onerror = function() {
+                callback(2 == webP.height);
+            };
+            webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
+        }
+        testWebP((function(support) {
+            let className = true === support ? "webp" : "no-webp";
+            document.documentElement.classList.add(className);
+        }));
+    }
+    let addWindowScrollEvent = false;
+    setTimeout((() => {
+        if (addWindowScrollEvent) {
+            let windowScroll = new Event("windowScroll");
+            window.addEventListener("scroll", (function(e) {
+                document.dispatchEvent(windowScroll);
+            }));
+        }
+    }), 0);
+    function DynamicAdapt(type) {
+        this.type = type;
+    }
+    DynamicAdapt.prototype.init = function() {
+        const _this = this;
+        this.оbjects = [];
+        this.daClassname = "_dynamic_adapt_";
+        this.nodes = document.querySelectorAll("[data-da]");
+        for (let i = 0; i < this.nodes.length; i++) {
+            const node = this.nodes[i];
+            const data = node.dataset.da.trim();
+            const dataArray = data.split(",");
+            const оbject = {};
+            оbject.element = node;
+            оbject.parent = node.parentNode;
+            оbject.destination = document.querySelector(dataArray[0].trim());
+            оbject.breakpoint = dataArray[1] ? dataArray[1].trim() : "767";
+            оbject.place = dataArray[2] ? dataArray[2].trim() : "last";
+            оbject.index = this.indexInParent(оbject.parent, оbject.element);
+            this.оbjects.push(оbject);
+        }
+        this.arraySort(this.оbjects);
+        this.mediaQueries = Array.prototype.map.call(this.оbjects, (function(item) {
+            return "(" + this.type + "-width: " + item.breakpoint + "px)," + item.breakpoint;
+        }), this);
+        this.mediaQueries = Array.prototype.filter.call(this.mediaQueries, (function(item, index, self) {
+            return Array.prototype.indexOf.call(self, item) === index;
+        }));
+        for (let i = 0; i < this.mediaQueries.length; i++) {
+            const media = this.mediaQueries[i];
+            const mediaSplit = String.prototype.split.call(media, ",");
+            const matchMedia = window.matchMedia(mediaSplit[0]);
+            const mediaBreakpoint = mediaSplit[1];
+            const оbjectsFilter = Array.prototype.filter.call(this.оbjects, (function(item) {
+                return item.breakpoint === mediaBreakpoint;
+            }));
+            matchMedia.addListener((function() {
+                _this.mediaHandler(matchMedia, оbjectsFilter);
+            }));
+            this.mediaHandler(matchMedia, оbjectsFilter);
+        }
+    };
+    DynamicAdapt.prototype.mediaHandler = function(matchMedia, оbjects) {
+        if (matchMedia.matches) for (let i = 0; i < оbjects.length; i++) {
+            const оbject = оbjects[i];
+            оbject.index = this.indexInParent(оbject.parent, оbject.element);
+            this.moveTo(оbject.place, оbject.element, оbject.destination);
+        } else for (let i = оbjects.length - 1; i >= 0; i--) {
+            const оbject = оbjects[i];
+            if (оbject.element.classList.contains(this.daClassname)) this.moveBack(оbject.parent, оbject.element, оbject.index);
+        }
+    };
+    DynamicAdapt.prototype.moveTo = function(place, element, destination) {
+        element.classList.add(this.daClassname);
+        if ("last" === place || place >= destination.children.length) {
+            destination.insertAdjacentElement("beforeend", element);
+            return;
+        }
+        if ("first" === place) {
+            destination.insertAdjacentElement("afterbegin", element);
+            return;
+        }
+        destination.children[place].insertAdjacentElement("beforebegin", element);
+    };
+    DynamicAdapt.prototype.moveBack = function(parent, element, index) {
+        element.classList.remove(this.daClassname);
+        if (void 0 !== parent.children[index]) parent.children[index].insertAdjacentElement("beforebegin", element); else parent.insertAdjacentElement("beforeend", element);
+    };
+    DynamicAdapt.prototype.indexInParent = function(parent, element) {
+        const array = Array.prototype.slice.call(parent.children);
+        return Array.prototype.indexOf.call(array, element);
+    };
+    DynamicAdapt.prototype.arraySort = function(arr) {
+        if ("min" === this.type) Array.prototype.sort.call(arr, (function(a, b) {
+            if (a.breakpoint === b.breakpoint) {
+                if (a.place === b.place) return 0;
+                if ("first" === a.place || "last" === b.place) return -1;
+                if ("last" === a.place || "first" === b.place) return 1;
+                return a.place - b.place;
+            }
+            return a.breakpoint - b.breakpoint;
+        })); else {
+            Array.prototype.sort.call(arr, (function(a, b) {
+                if (a.breakpoint === b.breakpoint) {
+                    if (a.place === b.place) return 0;
+                    if ("first" === a.place || "last" === b.place) return 1;
+                    if ("last" === a.place || "first" === b.place) return -1;
+                    return b.place - a.place;
+                }
+                return b.breakpoint - a.breakpoint;
+            }));
+            return;
+        }
+    };
+    const da = new DynamicAdapt("max");
+    da.init();
+    const header = document.querySelector(".header");
+    document.addEventListener("click", burger);
+    function burger(e) {
+        if (e.target.closest(".header__burger")) header.classList.toggle("open-burger"); else header.classList.remove("open-burger");
+    }
+    window["FLS"] = true;
+    isWebp();
+})();
