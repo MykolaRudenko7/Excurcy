@@ -1,0 +1,282 @@
+.title {
+	font-weight: 800;
+	font-size: 56px;
+	line-height: 130%;
+	color: #2B2B2B;
+
+	& span {
+		color: #FF6600;
+	}
+}
+
+.text {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 180%;
+	color: #5B5B5B;
+}
+
+// ------------------------------------------------------------------------
+.blockchain {
+	padding-top: 259px;
+	@include adaptiveValue("padding-top", 259, 138, 1440, 375, 1);
+	padding-bottom: 159px;
+	@include adaptiveValue("padding-bottom", 159, 48, 1440, 375, 1);
+
+	&__block {
+		display: flex;
+
+		@media (max-width: $mobile) {
+			flex-direction: column;
+		}
+	}
+
+	&__content {
+		flex: 0 1 50%;
+		display: flex;
+		flex-direction: column;
+		padding-right: 98px;
+		@include adaptiveValue("padding-right", 98, 0, 1440, 767.98, 1);
+
+		@media (max-width: $mobileSmall) {
+			align-items: center;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		font-size: 56px;
+		@include adaptiveValue("font-size", 56, 36, 1440, 375, 1);
+
+		&:not(:last-child) {
+			margin-bottom: 35px;
+			@include adaptiveValue("margin-bottom", 35, 20, 1440, 767.98, 1);
+		}
+	}
+
+	&__text {
+		&:not(:last-child) {
+			margin-bottom: 74px;
+			@include adaptiveValue("margin-bottom", 74, 30, 1440, 767.98, 1);
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		justify-content: start;
+
+		@media (max-width: $mobile) {
+			justify-content: flex-start;
+			margin-bottom: 30px;
+		}
+
+		@media (max-width: $mobileSmall) {
+			justify-content: center;
+			margin-bottom: 0px;
+		}
+	}
+
+	&__decor {
+		flex: 0 1 50%;
+
+		@media (max-width: $mobileSmall) {
+			text-align: center;
+		}
+	}
+
+	&__image {
+		display: inline-block;
+		position: relative;
+		margin-right: -90px;
+		@include adaptiveValue("margin-right", -90, 0, 1440, 375, 1);
+
+		& img {
+			max-width: 732px;
+
+			@media (max-width: $pc) {
+				max-width: 100%;
+				margin-bottom: 39px;
+			}
+		}
+	}
+}
+
+.button {
+	flex: 0 0 208px;
+	@include adaptiveValue("flex-basis", 208, 161, 1440, 375, 1);
+	height: 64px;
+	@include adaptiveValue("height", 64, 48, 1440, 375, 1);
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	margin-right: 32px;
+	@include adaptiveValue("margin-right", 32, 20, 1440, 375, 1);
+
+	background: #FF6600;
+	border-radius: 10px;
+	transition: all 0.3s ease 0s;
+
+	&:hover {
+		background-color: #ff8737;
+
+		& span {
+			color: transparent;
+		}
+
+		& svg {
+			transform: translateX(-50px) scale(2);
+		}
+	}
+
+	& span {
+		color: #FFFFFF;
+		font-weight: 700;
+		font-size: 16px;
+		@include adaptiveValue("font-size", 16, 14, 1440, 375, 1);
+		line-height: 137.5%;
+		transition: all 0.3s ease;
+	}
+
+	& svg {
+		top: 0;
+		margin-left: 17px;
+		transition: all 0.3s ease;
+	}
+}
+
+.button-white {
+	flex: 0 0 208px;
+	@include adaptiveValue("flex-basis", 208, 161, 1440, 375, 1);
+	height: 64px;
+	@include adaptiveValue("height", 64, 48);
+	text-align: center;
+	border: 1px solid #FF6600;
+	border-radius: 10px;
+	overflow: hidden;
+
+	& span {
+		font-weight: 700;
+		font-size: 16px;
+		@include adaptiveValue("font-size", 16, 14, 1440, 375, 1);
+		line-height: 137.5%;
+		color: #2B2B2B;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+// ------------------------------------------------------------------------
+.companies {
+	padding: 0px 83px 139px 83px;
+	@include adaptiveValue("padding-left", 83, 19, 1440, 375, 1);
+	@include adaptiveValue("padding-right", 83, 19, 1440, 375, 1);
+	@include adaptiveValue("padding-bottom", 139, 24, 1440, 375, 1);
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(4, auto);
+		column-gap: 96px;
+		justify-content: center;
+		justify-items: center;
+		align-items: center;
+		@include adaptiveValue("column-gap", 96, 28, 1440, 375, 1);
+	}
+
+	&__item {
+		position: relative;
+
+		& img {
+			width: 100%;
+		}
+
+		&:not(:last-child) {
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: -48px;
+				@include adaptiveValue("right", -48, -30, 1440, 767.98, 1);
+				width: 0;
+				height: 100%;
+				border: 2px solid #C0C5D2;
+
+				@media (max-width: $mobile) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+// -------------------------------------------------------------------------
+.about {
+	padding-bottom: 158px;
+	@include adaptiveValue("padding-bottom", 158, 48, 1440, 375, 1);
+
+	&__block {
+		display: flex;
+		gap: 30px;
+		@include adaptiveValue("gap", 30, 5, 1440, 767.98, 1);
+
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			gap: 16px;
+		}
+	}
+
+	&__decor {
+		flex: 0 1 45%;
+		text-align: center;
+
+		& img {
+			width: 546px;
+
+			@media (max-width: $pc) {
+				width: 100%;
+			}
+		}
+	}
+
+
+	&__content {
+		flex: 0 1 60%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 35px;
+		@include adaptiveValue("gap", 35, 16, 1440, 375, 1);
+
+		@media (max-width: $mobileSmall) {
+			align-items: center;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		font-size: 52px;
+
+	}
+
+	&__text {
+		font-size: 20px;
+		text-transform: capitalize;
+	}
+
+	&__statistics {}
+}
+
+.title {}
+
+.statistics {
+
+	&__items {}
+
+	&__item {}
+
+	&__title {}
+
+	&__number {}
+}

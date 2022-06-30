@@ -1,72 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-	<title>Excursy</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220629131839">
-	<link rel="shortcut icon" href="simg/header/logo.png">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+@@include('html/_head.htm',{
+"title":"Главная"
+})
 
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<div class="header__container">
-				<div class="header__logo">
-					<a href=""><img class="header__picture" src="img/body-header/logo.svg" alt="logo"></a>
-					<a class="header__text" href="">Excursy</a>
-				</div>
-				<nav class="header__menu menu-header">
-					<ul class="menu-header__items">
-						<li class="menu-header__item">
-							<a href="" class="menu-header__link">Home</a>
-						</li>
-						<li class="menu-header__item">
-							<a href="" class="menu-header__link">About us</a>
-						</li>
-						<li class="menu-header__item">
-							<a href="" class="menu-header__link">Our interests</a>
-						</li>
-						<li class="menu-header__item">
-							<a href="" class="menu-header__link">Values</a>
-						</li>
-						<li class="menu-header__item">
-							<a href="" class="menu-header__link">Current Projects</a>
-						</li>
-					</ul>
-					<div class="menu-header__button">
-						<a class="menu-header__element" href="">Sign Up</a>
+		@@include('html/_header.htm',{})
+		<main class="main">
+			<div class="main__container">
+
+
+				<section class="main__blockchain blockchain">
+					<div class="blockchain__block">
+						<div class="blockchain__content">
+							<h1 class="blockchain__title title">Let’s take a
+								tour to <span>Blockchain</span>
+								Technology</h1>
+							<p class="blockchain__text text">We are highly focused by blockchain technology that will lead
+								positively
+								to the future web.</p>
+							<div data-da=".blockchain__block,767.98" class="blockchain__buttons">
+								<button class="blockchain__button button">
+									<span>Get Started</span>
+									<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.52011 0L0.110107 1.41L4.69011 6L0.110107 10.59L1.52011 12L7.52011 6L1.52011 0Z"
+											fill="white" />
+									</svg>
+								</button>
+								<button class="blockchain__button button-white"><span>Learn more</span></button>
+							</div>
+						</div>
+						<div class="blockchain__decor">
+							<div class="blockchain__image">
+								<img src="@img/body-main/Blockchain/blockchain-decor.png" alt="blockchain-image">
+							</div>
+						</div>
 					</div>
-				</nav>
-				<button class="header__burger">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
+				</section>
+
+				<section class="main__conpanies companies">
+					<div class="companies__block">
+						<div class="companies__items">
+							<div class="companies__item">
+								<img src="@img/body-main/brands/brand01.jpg" alt="company-1">
+							</div>
+							<div class="companies__item">
+								<img src="@img/body-main/brands/brand02.jpg" alt="company-2">
+							</div>
+							<div class="companies__item">
+								<img src="@img/body-main/brands/brand03.jpg" alt="company-3">
+							</div>
+							<div class="companies__item">
+								<img src="@img/body-main/brands/brand04.jpg" alt="company-4">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__about about">
+					<div class="about__block">
+						<div class="about__decor">
+							<img class="about__picture" src="@img/body-main/about-us/About-Us.png" alt="About-Us">
+						</div>
+						<div class="about__content">
+							<h2 class="about__title title">About Us</h2>
+							<p class="about__text">We generated names based on a multitude of factors and picked the one that
+								resonated with us the most. Our founder first
+								engaged with the blockchain in 2013</p>
+							<div class="about__statistics statistics">
+								<div class="statistics__items">
+									<div class="statistics__item">
+										<p class="statistics__title">Project Done</p>
+										<p class="statistics__number">600+</p>
+									</div>
+									<div class="statistics__item">
+										<p class="statistics__title">Happy Clients</p>
+										<p class="statistics__number">950+</p>
+									</div>
+									<div class="statistics__item">
+										<p class="statistics__title">Employee</p>
+										<p class="statistics__number">30+</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
-		</header>
-		<main class="page">
 		</main>
-		<footer class="footer">
-			<div class="footer__container">
-			</div>
-		</footer>
+		@@include('html/_footer.htm',{})
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
-			</div>
-		</div>
-	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20220629131839"></script>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
 </body>
 
 </html>
