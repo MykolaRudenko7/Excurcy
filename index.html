@@ -7,8 +7,8 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="theme-color" content="#FAFAFA">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220630210837">
-	<link rel="shortcut icon" href="simg/header/logo.png">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220706200351">
+	<link rel="shortcut icon" href="/simg/header/favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -17,9 +17,9 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<a href="" class="header__logo">
-					<img class="header__picture" src="img/body-header/logo.svg" alt="logo">
-					<p class="header__text" href="">Excursy</p>
+				<a href="" class="header__logo logo">
+					<img class="logo__picture" src="img/header/logo.svg" alt="logo">
+					<p class="logo__text" href="">Excursy</p>
 				</a>
 				<nav class="header__menu menu-header">
 					<ul class="menu-header__items">
@@ -39,7 +39,7 @@
 							<a href="" class="menu-header__link">Current Projects</a>
 						</li>
 					</ul>
-					<button class="menu-header__button">
+					<button class="menu-header__button button">
 						<span href="">Sign Up</span>
 					</button>
 				</nav>
@@ -53,29 +53,30 @@
 		<main class="main">
 			<div class="main__container">
 
-
 				<section class="main__blockchain blockchain">
 					<div class="blockchain__block">
 						<div class="blockchain__content">
-							<h1 class="blockchain__title title">Let’s take a
-								tour to <span>Blockchain</span>
-								Technology</h1>
-							<p class="blockchain__text text">We are highly focused by blockchain technology that will lead
-								positively
-								to the future web.</p>
+							<div class="blockchain__text text-block">
+								<h1 class="text-block__title text-block__title-big">Let’s take a
+									tour to <span>Blockchain</span>
+									Technology</h1>
+								<p class="text-block__subtitle text-block__subtitle-big">We are highly focused by blockchain
+									technology that will lead
+									positively to the future web.</p>
+							</div>
 							<div data-da=".blockchain__block,767.98" class="blockchain__buttons">
-								<button class="blockchain__button button">
+								<button class="blockchain__button">
 									<span>Get Started</span>
 									<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M1.52011 0L0.110107 1.41L4.69011 6L0.110107 10.59L1.52011 12L7.52011 6L1.52011 0Z" fill="white" />
 									</svg>
 								</button>
-								<button class="blockchain__button button-white"><span>Learn more</span></button>
+								<button class="blockchain__button-white"><span>Learn more</span></button>
 							</div>
 						</div>
 						<div class="blockchain__decor">
 							<div class="blockchain__image">
-								<picture><source srcset="img/body-main/Blockchain/blockchain-decor.webp" type="image/webp"><img src="img/body-main/Blockchain/blockchain-decor.png" alt="blockchain-image"></picture>
+								<picture><source srcset="img/body-main/blockchain/blockchain-decor.webp" type="image/webp"><img src="img/body-main/blockchain/blockchain-decor.png" alt="blockchain-image"></picture>
 							</div>
 						</div>
 					</div>
@@ -106,10 +107,14 @@
 							<picture><source srcset="img/body-main/about-us/About-Us.webp" type="image/webp"><img class="about__picture" src="img/body-main/about-us/About-Us.png" alt="About-Us"></picture>
 						</div>
 						<div class="about__content">
-							<h2 class="about__title title">About Us</h2>
-							<p class="about__text">We generated names based on a multitude of factors and picked the one that
-								resonated with us the most. Our founder first
-								engaged with the blockchain in 2013</p>
+							<div data-da=".about__block,479.98" class="text-block">
+								<h2 class="text-block__title">About Us</h2>
+								<p class="text-block__subtitle">We generated names based on a multitude of factors and picked
+									the
+									one that
+									resonated with us the most. Our founder first
+									engaged with the blockchain in 2013</p>
+							</div>
 							<div class="about__statistics statistics">
 								<div class="statistics__items">
 									<div class="statistics__item">
@@ -129,10 +134,194 @@
 						</div>
 					</div>
 				</section>
+
+				<section class="main__our-interests our-interests">
+					<div class="our-interests__block">
+						<div class="text-block">
+							<h2 class="text-block__title">Our Interests</h2>
+							<p class="text-block__subtitle">It's the norm these days to lay out a roadmap that gives
+								stakeholders
+								an indication of the direction that the project
+								aspires to go. Inspired by Elon Musk’s 2006 masterplan, these are our skeleton ambitions.</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__create create">
+					<div class="create__block">
+						<div class="create__items">
+							<div class="create__item card">
+								<div class="card__icon">
+									<img src="img/body-main/interests/interest01.svg" alt="Blockchain-product">
+								</div>
+								<div class="card__body">
+									<h3 class="card__title">Blockchain product</h3>
+									<p class="card__text">Create something novel that has never been done on the blockchain
+										before
+										Build a product</p>
+									<a href="" class="card__link">Read More</a>
+								</div>
+							</div>
+							<div class="card__item card">
+								<div class="card__icon">
+									<img src="img/body-main/interests/interest02.svg" alt="Quality-product">
+								</div>
+								<div class="card__body">
+									<h3 class="card__title">Blockchain product</h3>
+									<p class="card__text">Create something novel that has never been done on the blockchain
+										before
+										Build a product</p>
+									<a href="" class="card__link">Read More</a>
+								</div>
+							</div>
+							<div class="card__item card">
+								<div class="card__icon">
+									<img src="img/body-main/interests/interest03.svg" alt="Viable-product">
+								</div>
+								<div class="card__body">
+									<h3 class="card__title">Blockchain product</h3>
+									<p class="card__text">Create something novel that has never been done on the blockchain
+										before
+										Build a product</p>
+									<a href="" class="card__link">Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__our-values our-values">
+					<div class="our-values__block">
+						<div class="our-values__decor">
+							<picture><source srcset="img/body-main/our-values/Our-Values.webp" type="image/webp"><img src="img/body-main/our-values/Our-Values.png" alt="Our-Values"></picture>
+						</div>
+						<div class="our-values__content">
+							<div class="text-block">
+								<h2 class="text-block__title">Our Values</h2>
+								<p class="text-block__subtitle">anftw is a hallmark. The team members may change, but the
+									quality of our project execution will not.An outstanding team
+									can build a product in any industry. Don’t be intimidated by incumbents.</p>
+							</div>
+							<button class="our-values__button button">
+								<span>Read More</span>
+							</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__current-project current-project">
+					<div class="current-project__block">
+						<div class="current-project__text">
+							<h2 class="current-project__title">Current Projects</h2>
+						</div>
+						<div class="current-project__items">
+
+							<div class="current-project__item card-curent-prj">
+								<div class="card-curent-prj__image">
+									<picture><source srcset="img/body-main/current/current01.webp" type="image/webp"><img src="img/body-main/current/current01.jpg" alt="current01"></picture>
+								</div>
+								<div class="card-curent-prj__body">
+									<h3 class="card-curent-prj__title">Certified Great Expectations Lover</h3>
+									<p class="card-curent-prj__text">
+										Certified Great Expectations Lover - To add value to
+										<a href="" class="card-curent-prj__link" data-da=".card-curent-prj__body,767.98">Read
+											more.</a>
+									</p>
+								</div>
+							</div>
+
+							<div class="current-project__item card-curent-prj">
+								<div class="card-curent-prj__image">
+									<picture><source srcset="img/body-main/current/current02.webp" type="image/webp"><img src="img/body-main/current/current02.jpg" alt="current02"></picture>
+								</div>
+								<div class="card-curent-prj__body card-curent-prj__body-second ">
+									<h3 class="card-curent-prj__title">Certified Great Expectations Lover</h3>
+									<p class="card-curent-prj__text">
+										Certified Great Expectations Lover - To add value to
+										<a href="" class="card-curent-prj__link" data-da=".card-curent-prj__body-second,767.98">Read
+											more.</a>
+									</p>
+								</div>
+							</div>
+
+							<div class="current-project__item card-curent-prj">
+								<div class="card-curent-prj__image">
+									<picture><source srcset="img/body-main/current/current03.webp" type="image/webp"><img src="img/body-main/current/current03.jpg" alt="current03"></picture>
+								</div>
+								<div class="card-curent-prj__body card-curent-prj__body-third">
+									<h3 class="card-curent-prj__title">Certified Great Expectations Lover</h3>
+									<p class="card-curent-prj__text">
+										Certified Great Expectations Lover - To add value to Lorem ipsum dolor sit amet
+										consectetur, adipisicing elit. Repellendus illo ullam maxime est, quidem exercitationem
+										eum ratione nulla soluta placeat doloremque quas iure. Nam enim necessitatibus soluta
+										doloribus cupiditate magnam?
+										<a href="" class="card-curent-prj__link" data-da=".card-curent-prj__body-third,767.98">Read
+											more.</a>
+									</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
 			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__block">
+
+					<a href="" class="footer__logo">
+						<img class="footer__picture" src="img/footer/logo.svg" alt="logo">
+						<p class="footer__text" href="">Excursy</p>
+					</a>
+
+					<div class="footer__social social">
+						<div class="social__items">
+							<div class="social__item">
+								<a href="" class="social__link">
+									<img src="img/footer/social01.svg" alt="social-1">
+								</a>
+							</div>
+							<div class="social__item">
+								<a href="" class="social__link">
+									<img src="img/footer/social02.svg" alt="social-2">
+								</a>
+							</div>
+							<div class="social__item">
+								<a href="" class="social__link">
+									<img src=" img/footer/social03.svg" alt="social-3">
+								</a>
+							</div>
+							<div class="social__item">
+								<a href="" class="social__link">
+									<img src="img/footer/social04.svg" alt="social-4">
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<nav class="footer__menu menu-footer">
+						<ul class="menu-footer__items">
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Home</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">About us</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Our interests</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Values</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Current Projects</a>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
 			</div>
 		</footer>
 	</div>
@@ -146,7 +335,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220630210837"></script>
+	<script src="js/app.min.js?_v=20220706200351"></script>
 </body>
 
 </html>
