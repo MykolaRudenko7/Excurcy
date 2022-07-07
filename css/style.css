@@ -1101,9 +1101,9 @@ h6 {
   position: absolute;
   top: 0;
   right: -48px;
-  width: 0;
+  width: 4px;
   height: 57px;
-  border: 2px solid #C0C5D2;
+  background-color: #C0C5D2;
 }
 
 @supports (right: clamp( -3rem , -0.5893574596rem  +  -2.6784917116vw , -1.875rem )) {
@@ -1192,9 +1192,6 @@ h6 {
 
 .statistics {
   padding-top: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2183,6 +2180,12 @@ h6 {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+
+  .statistics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .statistics__items {
